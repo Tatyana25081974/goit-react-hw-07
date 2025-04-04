@@ -6,8 +6,19 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #10d1e6;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     min-width: 220px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    /* Плавна трансформація */
+    transform: scale(1);
+    /* Початковий масштаб */
+}
+
+.card:hover {
+    transform: scale(1.2);
+    /* Збільшуємо тільки на 20% (а не в 2 рази) */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    /* Тінь більша і глибша */
 }
 
 .text {
